@@ -12,7 +12,7 @@ drive.mount('/content/drive')
 from huggingface_hub import login
 
 # Use your Hugging Face token here
-HF_TOKEN = "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"  # Replace with your actual Hugging Face token
+HF_TOKEN = "your hugging face token"  # Replace with your actual Hugging Face token
 login(HF_TOKEN)
 
 # Define the model directory on Google Drive

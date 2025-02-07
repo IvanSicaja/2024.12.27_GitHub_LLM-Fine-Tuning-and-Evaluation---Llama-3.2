@@ -17,7 +17,7 @@ import os
 import shutil
 
 # Login to Hugging Face with your token
-HF_TOKEN = "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"
+HF_TOKEN = "your hugging face token"
 login(HF_TOKEN)
 
 # Define model directory and repo name

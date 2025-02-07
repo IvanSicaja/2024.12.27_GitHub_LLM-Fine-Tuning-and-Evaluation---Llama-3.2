@@ -9,7 +9,7 @@ from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'  # Disable symlink warnings for Windows
 
 # Hugging Face Authentication
-login("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")  # Replace with your Hugging Face token
+login("your hugging face token")  # Replace with your Hugging Face token
 
 # Load spaCy for text preprocessing
 nlp = spacy.load("en_core_web_sm")
@@ -19,13 +19,13 @@ repo_name = "ivansicaja/Fine_Tuned_Llama-3.2-1B-Instruct_ROS_PLC_Arduino"
 subfolder = "v_1.0.0/model_files"
 
 # Load tokenizer from the specified subfolder
-tokenizer = AutoTokenizer.from_pretrained(repo_name, token="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", subfolder=subfolder)
+tokenizer = AutoTokenizer.from_pretrained(repo_name, token="your hugging face token", subfolder=subfolder)
 
 # Check if GPU is available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load the fine-tuned model from the specified subfolder
-model = AutoModelForCausalLM.from_pretrained(repo_name, token="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", subfolder=subfolder).to(device)
+model = AutoModelForCausalLM.from_pretrained(repo_name, token="your hugging face token", subfolder=subfolder).to(device)
 
 # Set up the text generation pipeline
 generator = pipeline("text-generation", model=model, tokenizer=tokenizer, pad_token_id=tokenizer.eos_token_id, device=0 if device == torch.device("cuda") else -1)

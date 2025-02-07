@@ -11,7 +11,7 @@ import keyboard  # To detect escape key press
 os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'  # Disable symlink warnings for Windows
 
 # --- Hugging Face Authentication ---
-login("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")  # Replace with your Hugging Face token
+login("your hugging face token")  # Replace with your Hugging Face token
 
 # --- Setup NLP and LLaMA Model ---
 # Load spaCy for text preprocessing
@@ -19,11 +19,11 @@ nlp = spacy.load("en_core_web_sm")
 
 # Load LLaMA model and tokenizer from Hugging Face
 llama_model_name = "meta-llama/Llama-3.2-1B-Instruct"
-tokenizer = AutoTokenizer.from_pretrained(llama_model_name, token="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")
+tokenizer = AutoTokenizer.from_pretrained(llama_model_name, token="your hugging face token")
 
 # Check if GPU is available and load the model on GPU if possible
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = AutoModelForCausalLM.from_pretrained(llama_model_name, token="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").to(device)
+model = AutoModelForCausalLM.from_pretrained(llama_model_name, token="your hugging face token").to(device)
 
 # Set up the text generation pipeline with LLaMA model on the specified device
 generator = pipeline("text-generation", model=model, tokenizer=tokenizer, pad_token_id=tokenizer.eos_token_id, device=0 if device == torch.device("cuda") else -1)

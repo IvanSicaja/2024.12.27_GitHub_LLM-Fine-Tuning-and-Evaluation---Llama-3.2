@@ -39,7 +39,7 @@ nltk.download('punkt_tab')
 nltk.download('wordnet')
 
 # Log in with your Hugging Face token (Replace with your actual token)
-login("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")  # Replace with your token
+login("your hugging face token")  # Replace with your token
 
 # Select device (use GPU if available)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

@@ -9,7 +9,7 @@ from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'  # Disable symlink warnings for Windows
 
 # Hugging Face Authentication
-login("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")  # Replace with your Hugging Face token
+login("your hugging face token")  # Replace with your Hugging Face token
 
 # Load spaCy for text preprocessing
 nlp = spacy.load("en_core_web_sm")
@@ -18,13 +18,13 @@ nlp = spacy.load("en_core_web_sm")
 model_name = "meta-llama/Llama-3.2-1B-Instruct"
 
 # Load tokenizer
-tokenizer = AutoTokenizer.from_pretrained(model_name, token="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")
+tokenizer = AutoTokenizer.from_pretrained(model_name, token="your hugging face token")
 
 # Check if GPU is available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load the model
-model = AutoModelForCausalLM.from_pretrained(model_name, token="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").to(device)
+model = AutoModelForCausalLM.from_pretrained(model_name, token="your hugging face token").to(device)
 
 # Set up the text generation pipeline
 generator = pipeline("text-generation", model=model, tokenizer=tokenizer, pad_token_id=tokenizer.eos_token_id, device=0 if torch.cuda.is_available() else -1)

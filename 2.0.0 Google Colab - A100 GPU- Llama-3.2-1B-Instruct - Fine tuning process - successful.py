@@ -23,7 +23,7 @@ import torch
 from huggingface_hub import login
 
 # Log in to Hugging Face with your token
-HF_TOKEN = "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"  # Replace with your Hugging Face token
+HF_TOKEN = "your hugging face token"  # Replace with your Hugging Face token
 login(HF_TOKEN)
 
 # Authenticate Weights & Biases
