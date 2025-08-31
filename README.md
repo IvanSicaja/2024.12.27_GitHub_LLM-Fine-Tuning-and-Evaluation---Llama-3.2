@@ -19,7 +19,7 @@
 
 To provide a **domain-specific conversational AI** capable of answering technical queries in automation, robotics, and programming, with reliable evaluation metrics validating performance.
 
-**🧠 How It Works**
+### 🧠 How It Works
 
 This project involved fine-tuning the **Llama 3.2-1B-Instruct** model on a custom dataset of technical questions and answers related to ROS, PLCs, Arduino, and automation. Over four months, the project encompassed full **data preprocessing, tokenization, model training, evaluation, and deployment**. Multiple evaluation metrics, including **BLEU, ROUGE, METEOR, BERTScore, and perplexity**, were applied to ensure the model’s performance. Additionally, a **custom knowledge chatbot** was implemented to demonstrate practical inference, enabling context-aware responses to user queries.
 
