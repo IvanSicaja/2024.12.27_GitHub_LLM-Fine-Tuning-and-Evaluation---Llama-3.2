@@ -41,6 +41,21 @@ TBD
 
 **Python, PyTorch, Transformers, Hugging Face Hub, Google Colab, spaCy, NLTK, Pandas, BLEU, ROUGE, METEOR, BERTScore, Llama 3.2-1B, Custom Dataset, Tokenization, Model Fine-Tuning, GPU Acceleration, Evaluation Pipelines, Chatbot Development**
 
+---
+
+### 📸 Project Snapshot
+
+TBD.
+
+---
+
+### 🎥 Video Demonstration
+
+TBD.
+
+---
+
+
 ### 📣 Hashtags Section
 
 **\# #LLM #AI #MachineLearning #DeepLearning #PyTorch #HuggingFace #Transformers #GoogleColab #GPU #FineTuning #Chatbot #NLP #EvaluationMetrics #BLEU #ROUGE #METEOR #BERTScore #DataPreprocessing #Tokenization #ModelTraining #ModelDeployment #DomainSpecificAI #Automation #Robotics #PLC #Arduino**
